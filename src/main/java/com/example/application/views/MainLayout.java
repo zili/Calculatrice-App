@@ -1,7 +1,6 @@
 package com.example.application.views;
 
 
-import com.example.application.views.about.AboutView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -114,8 +113,8 @@ public class MainLayout extends AppLayout {
 
     private MenuItemInfo[] createMenuItems() {
         return new MenuItemInfo[]{ //
-                new MenuItemInfo("About", "la la-file", AboutView.class), //
-
+                new MenuItemInfo("Calculatrice", "la la-file" , CalculatorView.class),
+                new MenuItemInfo("Nouvelle Calculatrice","la la-calculator", NewCalculator.class)
         };
     }
 
